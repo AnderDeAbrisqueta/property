@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Información del inmuenle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img [src]="property.image" />
+    <ion-card-header>
+      <ion-card-title>{{ property.property }}</ion-card-title>
+      <ion-card-subtitle>{{ property.price }}€, {{ property.bedrooms }} dormitorios y {{ property.sqm }} m<sup>2</sup></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ property.description }}
+      <div>
+        <br>
+        <ion-icon slot="start" name="call"></ion-icon> {{ property.contactPhone }}
+      </div>
+    </ion-card-content>
+    
+  </ion-card>
+</ion-content>
