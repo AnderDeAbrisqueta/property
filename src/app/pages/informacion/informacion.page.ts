@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Properties } from 'src/app/model/properties';
 import { PropertiesService } from 'src/app/properties.service';
 
@@ -22,7 +22,6 @@ export class InformacionPage implements OnInit {
 
   constructor(
     private propertiesService: PropertiesService,
-    // private router: Router,
     private activatedRoute: ActivatedRoute
   ) {}
 
